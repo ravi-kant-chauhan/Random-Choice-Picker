@@ -46,6 +46,11 @@ function randomSelect() {
         setTimeout(() => {
             clearInterval(interval)
     
+            setTimeout(() => {
+                const randomTag = pickRandomTag()
+    
+                highlightTag(randomTag)
+            }, 100)
     
         }, times * 100)
 }
